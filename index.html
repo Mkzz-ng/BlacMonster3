@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Monster Gym - Transforma tu cuerpo</title>
+     <link rel="stylesheet" href="index.css">
+    <style>
+        :root {
+            --black: #121212;
+            --dark-red: #8B0000;
+            --red: #D10000;
+            --light-red: #FF2E2E;
+            --gray: #2A2A2A;
+            --light-gray: #E0E0E0;
+            --white: #F5F5F5;
+        }
+        
+        
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Black Monster</h1>
+            <p>Donde los monstruos se crean</p>
+        </div>
+        
+    </header>
+     
+    <section class="gym-slider">
+        <h2 class="section-title">Nuestras Instalaciones</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="zonadepesas.jpg" alt="Zona de pesas">
+                    <div class="slide-caption">
+                        <h3>Zona de Pesas</h3>
+                        <p>Equipo profesional para el entrenamiento de fuerza</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="area%20de%20cardio.jpg" alt="Zona de cardio">
+                    <div class="slide-caption">
+                        <h3>Zona de Cardio</h3>
+                        <p>Máquinas de última generación para mejorar tu resistencia</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="Areadepierna.jpg" alt="Zona de crossfit">
+                    <div class="slide-caption">
+                        <h3>Área de Pierna</h3>
+                        <p>Espacio dedicado para entrenamientos intensos para las piernas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <span class="slider-dot active"></span>
+                <span class="slider-dot"></span>
+                <span class="slider-dot"></span>
+            </div>
+        </div>
+    </section>
+    <div class="modal" id="registrationModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Próximamente Inscripciones Online</h3>
+        <p>Actualmente estamos mejorando nuestro sistema de inscripciones.</p>
+        <p>Por favor, visítanos en nuestro gimnasio para registrar tu membresía o contáctanos al:</p>
+        <p class="modal-phone"><i class="fas fa-phone"></i>+1 234 567 890</p>
+        <p class="modal-email"><i class="fas fa-envelope"></i> info@blackmonstergym.com</p>
+    </div>
+        
+</div>
+    <script>
+    document.querySelectorAll('.open-modal').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('registrationModal').style.display = 'block';
+        });
+    });
+    
+    document.querySelector('.close-modal').addEventListener('click', function() {
+        document.getElementById('registrationModal').style.display = 'none';
+    });
+    
+    window.addEventListener('click', function(e) {
+        if (e.target === document.getElementById('registrationModal')) {
+            document.getElementById('registrationModal').style.display = 'none';
+        }
+    });
+</script>
+    <section class="membership-plans">
+        <h2 class="section-title">Nuestros Planes</h2>
+        <div class="plans-container">
+            <div class="plan">
+                <h3>Básico</h3>
+                <div class="price">$300<span>/mes</span></div>
+                <ul>
+                    <li>Acceso a todas las zonas</li>
+                    <li>Acceso ilimitado</li> 
+                </ul>
+                <a href="#" class="cta-button open-modal">Únete ahora</a>
+            </div>
+            <div class="plan">
+                <h3>Pareja</h3>
+                <div class="price">$500<span>/mes</span></div>
+                <ul>
+                    <li>Acceso a todas las zonas</li>
+                    <li>Acceso ilimitado</li>
+                    <li>Descuento por pagar en pareja</li>
+                    
+                </ul>
+               <a href="#" class="cta-button open-modal">Únete ahora</a>
+            </div>
+            <div class="plan">
+                <h3>Monster</h3>
+                <div class="price">$<span>/mes</span></div>
+                <ul>
+                    <li>Acceso a todas las zonas</li>
+                    <li>Acceso ilimitado</li> 
+                    <li>Suplemento mensual</li>
+                </ul>
+                <a href="#" class="cta-button open-modal">Únete ahora</a>>
+            </div>
+        </div>
+    </section>
+  
+<section class="sponsored-athletes">
+    <h2 class="section-title">Atletas Destacados</h2>
+    <div class="athletes-container">
+       
+        <div class="athlete-card">
+            <div class="athlete-image">
+                <img src="cristalgym.jpg" alt="">
+            </div>
+            <div class="athlete-info">
+                <h3>Cristal</h3>
+                <p class="athlete-sport">Fisicoculturismo y Nutriologa</p>
+                <div class="athlete-social">
+                    <a href="https://www.instagram.com/cris_nunag?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/luna.azteca.397/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@crisnuag?is_from_webapp=1&sender_device=pc" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="athlete-card">
+            <div class="athlete-image">
+                <img src="ebergym.jpg" alt="Eber">
+            </div>
+            <div class="athlete-info">
+                <h3>Eber Ruiz</h3>
+                <p class="athlete-sport">Fisicoculturismo</p>
+                <div class="athlete-social">
+                    <a href="https://www.instagram.com/eberruiz_02/?utm_source=ig_web_button_share_sheet" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="athlete-card">
+            <div class="athlete-image">
+                <img src="" alt="Ana Vargas">
+            </div>
+            <div class="athlete-info">
+                <h3>nombre1</h3>
+                <p class="athlete-sport">area</p>
+                <div class="athlete-social">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="athlete-card">
+            <div class="athlete-image">
+                <img src="" alt="Javier López">
+            </div>
+            <div class="athlete-info">
+                <h3>nombre1</h3>
+                <p class="athlete-sport">area</p>
+                <div class="athlete-social">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Av. jofrito w yoquese</p>
+                    <p><i class="fas fa-phone"></i> +52 7777777</p>
+                    <p><i class="fas fa-envelope"></i>un gmail random jsjsjs</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes: 6:00 - 23:00</p>
+                <p>Sábados: 8:00 - 20:00</p>
+                <p>Domingos: 9:00 - 16:00</p>
+                <p>Plan Monster: Acceso 24/7</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/blackmonster_gym?igsh=ZzV0YzBwbTQ2ODdq"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Black Monster Gym. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Slider functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        const totalSlides = slides.length;
+        
+        function showSlide(index) {
+            const slider = document.querySelector('.slider');
+            if (index >= totalSlides) currentSlide = 0;
+            if (index < 0) currentSlide = totalSlides - 1;
+            
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Update dots
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+        }
+        
+        // Auto slide
+        setInterval(() => {
+            currentSlide++;
+            showSlide(currentSlide);
+        }, 5000);
+        
+        // Click on dots
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                currentSlide = i;
+                showSlide(currentSlide);
+            });
+        });
+    </script>
+</body>
+</html>

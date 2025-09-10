@@ -1,0 +1,397 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            background-color: var(--black);
+            color: var(--white);
+        }
+        
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            margin-bottom: 2rem;
+        }
+        
+        .logo h1 {
+            font-size: 5rem;
+            color: var(--red);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 3px 3px 0 var(--black);
+            margin-bottom: 1rem;
+        }
+        
+        .logo p {
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            color: var(--light-gray);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--red);
+            color: var(--white);
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--light-red);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .gym-slider {
+            padding: 5rem 0;
+            background-color: var(--gray);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--red);
+            text-transform: uppercase;
+        }
+        
+        .slider-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .slide {
+            min-width: 100%;
+            padding: 0 20px;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .slide-caption {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin-top: -5px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        
+        .slide-caption h3 {
+            color: var(--red);
+            margin-bottom: 10px;
+        }
+        
+        .slider-nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .slider-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: var(--light-gray);
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        
+        .slider-dot.active {
+            background-color: var(--red);
+        }
+        
+        .membership-plans {
+            padding: 5rem 0;
+            background-color: var(--black);
+        }
+        
+        .plans-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0 20px;
+        }
+        
+        .plan {
+            background-color: var(--gray);
+            border-radius: 10px;
+            padding: 2rem;
+            width: 350px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-top: 5px solid var(--red);
+        }
+        
+        .plan:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(210, 0, 0, 0.2);
+        }
+        
+        .plan h3 {
+            font-size: 1.8rem;
+            color: var(--red);
+            margin-bottom: 1rem;
+        }
+        
+        .plan .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+        }
+        
+        .plan .price span {
+            font-size: 1rem;
+            color: var(--light-gray);
+        }
+        
+        .plan ul {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .plan ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        footer {
+            background-color: var(--gray);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0 20px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .footer-section h3 {
+            color: var(--red);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: var(--red);
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: var(--white);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--red);
+        }
+        
+        .copyright {
+            margin-top: 3rem;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--light-gray);
+        }
+        
+        @media (max-width: 768px) {
+            .logo h1 {
+                font-size: 3rem;
+            }
+            
+            .logo p {
+                font-size: 1.2rem;
+            }
+            
+            .plans-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+.sponsored-athletes {
+        padding: 5rem 0;
+        background-color: var(--black);
+        border-top: 1px solid var(--gray);
+        border-bottom: 1px solid var(--gray);
+    }
+    
+    .athletes-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        padding: 0 20px;
+    }
+    
+    .athlete-card {
+        background-color: var(--gray);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-top: 3px solid var(--red);
+    }
+    
+    .athlete-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(210, 0, 0, 0.2);
+    }
+    
+    .athlete-image {
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    .athlete-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .athlete-card:hover .athlete-image img {
+        transform: scale(1.05);
+    }
+    
+    .athlete-info {
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .athlete-info h3 {
+        color: var(--red);
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .athlete-sport {
+        color: var(--light-gray);
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .athlete-social {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .social-icon {
+        color: var(--light-gray);
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        color: var(--red);
+    }
+    
+    @media (max-width: 768px) {
+        .athletes-container {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+        }
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .modal-content {
+        background-color: var(--gray);
+        margin: 15% auto;
+        padding: 2rem;
+        border: 2px solid var(--red);
+        border-radius: 10px;
+        width: 80%;
+        max-width: 500px;
+        position: relative;
+        text-align: center;
+    }
+    
+    .close-modal {
+        color: var(--light-gray);
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    
+    .close-modal:hover {
+        color: var(--red);
+    }
+    
+    .modal-phone, .modal-email {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+    
+    .modal-phone i, .modal-email i {
+        margin-right: 10px;
+        color: var(--red);
+    }
